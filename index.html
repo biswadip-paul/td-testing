@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legal intelligence and solutions for legal professionals">
+    <title>Legal Solutions & Intelligence | TR Legal Testing Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Debug Panel Toggle -->
+    <button id="debug-toggle" class="debug-toggle">Show Debug Panel</button>
+
+    <!-- Debug Panel -->
+    <div id="debug-panel" class="debug-panel">
+        <div class="debug-header">
+            <h3>API Testing & Debug Console</h3>
+            <button id="debug-close" class="debug-close">×</button>
+        </div>
+
+        <div class="debug-section">
+            <h4>SDK Status</h4>
+            <div id="sdk-status" class="status-grid">
+                <div class="status-item">
+                    <span class="status-label">TD SDK:</span>
+                    <span id="td-status" class="status-value">Not Loaded</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Adobe Analytics:</span>
+                    <span id="adobe-status" class="status-value">Not Loaded</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="debug-section">
+            <h4>Request Payload</h4>
+            <pre id="request-payload" class="code-block">Waiting for request...</pre>
+        </div>
+
+        <div class="debug-section">
+            <h4>API Response</h4>
+            <div class="response-info">
+                <span>Status: <span id="response-status">-</span></span>
+                <span>Time: <span id="response-time">-</span></span>
+            </div>
+            <pre id="response-data" class="code-block">Waiting for response...</pre>
+        </div>
+
+        <div class="debug-section">
+            <h4>Adobe Tags Fired</h4>
+            <pre id="adobe-tags" class="code-block">No tags fired yet</pre>
+        </div>
+
+        <div class="debug-section">
+            <h4>Console Logs</h4>
+            <div id="console-logs" class="console-logs"></div>
+        </div>
+
+        <div class="debug-actions">
+            <button id="clear-logs" class="btn-secondary">Clear Logs</button>
+            <button id="trigger-test" class="btn-primary">Trigger Test Call</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="4" fill="#FF6200"/>
+                        <path d="M10 15H30M10 20H30M10 25H30" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">TR Legal</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#solutions">Solutions</a>
+                    <a href="#products">Products</a>
+                    <a href="#insights">Insights</a>
+                    <a href="#support">Support</a>
+                    <a href="#about">About</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="btn-secondary">Sign In</button>
+                    <button class="btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Legal Intelligence That Drives Results</h1>
+                <p class="hero-subtitle">Comprehensive legal solutions powered by the world's most trusted content and technology</p>
+                <div class="hero-actions">
+                    <button class="btn-primary-large">Explore Solutions</button>
+                    <button class="btn-secondary-large">Request Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Our Solutions</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">📚</div>
+                    <h3>Westlaw</h3>
+                    <p>The most comprehensive legal research platform with AI-powered insights</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">⚖️</div>
+                    <h3>Practical Law</h3>
+                    <p>Expert-created resources and tools for efficient legal practice</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔍</div>
+                    <h3>Legal Research</h3>
+                    <p>Advanced search and analysis tools for legal professionals</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">💼</div>
+                    <h3>Case Management</h3>
+                    <p>Streamline workflows and manage cases efficiently</p>
+                    <a href="#" class="card-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="insights-section">
+        <div class="container">
+            <h2 class="section-title">Latest Insights</h2>
+            <div class="insights-grid">
+                <article class="insight-card">
+                    <div class="insight-image"></div>
+                    <div class="insight-content">
+                        <span class="insight-category">Thought Leadership</span>
+                        <h3>The Future of Legal Technology</h3>
+                        <p>Exploring how AI and automation are transforming legal practice</p>
+                        <a href="#" class="card-link">Read Article →</a>
+                    </div>
+                </article>
+                <article class="insight-card">
+                    <div class="insight-image"></div>
+                    <div class="insight-content">
+                        <span class="insight-category">Industry Trends</span>
+                        <h3>Regulatory Compliance in 2025</h3>
+                        <p>Key compliance challenges and strategies for modern law firms</p>
+                        <a href="#" class="card-link">Read Article →</a>
+                    </div>
+                </article>
+                <article class="insight-card">
+                    <div class="insight-image"></div>
+                    <div class="insight-content">
+                        <span class="insight-category">Best Practices</span>
+                        <h3>Optimizing Legal Research</h3>
+                        <p>Tips and techniques for more efficient legal research workflows</p>
+                        <a href="#" class="card-link">Read Article →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Legal Practice?</h2>
+                <p>Connect with our team to discover how our solutions can help you work smarter</p>
+                <button class="btn-primary-large">Get Started Today</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Westlaw</a></li>
+                        <li><a href="#">Practical Law</a></li>
+                        <li><a href="#">Legal Research</a></li>
+                        <li><a href="#">Case Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Law Firms</a></li>
+                        <li><a href="#">Corporate Legal</a></li>
+                        <li><a href="#">Government</a></li>
+                        <li><a href="#">Academia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TR Legal Testing Site. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mock TD SDK -->
+    <script src="mock-td-sdk.js"></script>
+
+    <!-- Mock Adobe Analytics -->
+    <script src="mock-adobe-analytics.js"></script>
+
+    <!-- Enhanced Testing Script -->
+    <script src="personalization-test.js"></script>
+
+    <!-- Debug UI Script -->
+    <script src="debug-ui.js"></script>
+</body>
+</html>

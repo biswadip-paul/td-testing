@@ -63,4 +63,4 @@ setTimeout(function() {
     // Fire default Adobe tags without personalization
     fireAdobeTags(null);
   }
-}, 100);
+}, 150);

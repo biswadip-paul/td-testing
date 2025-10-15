@@ -26,7 +26,7 @@ setTimeout(function() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/vnd.treasuredata.v1+json',
-        'WP13n-Token': '11521/1/5156c1fdefe24737b23ee39824523625', 
+        'WP13n-Token': '11521/1/f24d2c4009a74fc2ac1811a3a3414a9b', 
         'Authorization': 'TD1 11521/c34f125ac9eff40a45549a42a22b545fa6a434ad' // Replace with actual write key
       },
       body: JSON.stringify({

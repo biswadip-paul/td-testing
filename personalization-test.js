@@ -22,9 +22,13 @@ setTimeout(function() {
     console.log('%c→ Testing Mode: Simulating API call (CORS restricted)', 'color: #F59E0B; font-weight: bold;');
 
     // Make the personalization API call
-    fetch('https://td-proxy.td-se-rt.workers.dev', {
+    fetch('https://us01.p13n.in.treasuredata.com/public/src_js_sdk/tr_web_pageviews_rt2', {
       method: 'POST',
-      headers: {"Content-Type": "application/json"},
+      headers: {
+        "Content-Type": "application/vnd.treasuredata.v1+json",
+        "WP13n-Token": "11521/1/f24d2c4009a74fc2ac1811a3a3414a9b", // safe to expose client-side
+        'Authorization': 'TD1 11521/c34f125ac9eff40a45549a42a22b545fa6a434ad'
+      },
       body: JSON.stringify({
         td_client_id: td_instance.client.track.values.td_client_id(),
         td_url: td_instance.client.track.values.td_url(),
